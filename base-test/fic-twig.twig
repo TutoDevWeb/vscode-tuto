@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<style>
+		p.comment,aside {
+			margin-top: 5rem;
+			color:maroon;
+			font-size: 1.3rem;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		p.comment::before {
+			content: url("/V2/TUTO/CHAPITRE/HTML-CSS/01-debuter-en-html/exe/montrer.png");
+		}
+	</style>
+</head>
+<body>
+
+	{% block content %}
+
+
+	{% endblock%}
+
+	<p class='comment'>{{ comment }}</p>
+	<aside><strong>Voir le tutoriel : <a href="{{ link_url}}">{{ link_anchor }}</a></strong></aside>
+
+</body>
+</html>
